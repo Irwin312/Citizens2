@@ -8,10 +8,12 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.ServerStatsCounter;
 import net.minecraft.stats.Stat;
 import net.minecraft.world.entity.player.Player;
+import org.bukkit.Bukkit;
+import org.bukkit.craftbukkit.v1_18_R1.CraftServer;
 
 public class EmptyServerStatsCounter extends ServerStatsCounter {
     public EmptyServerStatsCounter() {
-        super(null, CitizensAPI.getDataFolder());
+        super(((CraftServer) Bukkit.getServer()).getServer(), CitizensAPI.getDataFolder());
     }
 
     @Override

@@ -17,7 +17,7 @@
 		<placeholderapi.version>2.10.9</placeholderapi.version>
 		<citizensapi.version>${project.version}</citizensapi.version>
 		<powermock.version>1.4.12</powermock.version> 
-        <worldguard.version>7.0.4</worldguard.version>
+        <worldguard.version>7.0.7-SNAPSHOT</worldguard.version>
 	</properties>
 
 	<repositories>
@@ -47,6 +47,12 @@
 	</repositories>
 
 	<dependencies>
+		<dependency>
+  			<groupId>org.bstats</groupId>
+  			<artifactId>bstats-bukkit</artifactId>
+  			<version>3.0.0</version>
+  			<scope>compile</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.spigotmc</groupId>
 			<artifactId>spigot</artifactId>
